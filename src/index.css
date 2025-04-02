@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0f172a; /* slate-900 */
+  color: #e2e8f0; /* slate-200 */
+  overflow-x: hidden;
+}
+
+section {
+  scroll-margin-top: 80px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+section:nth-child(odd) {
+  background: #111827; /* gray-900 */
+}
+
+section:nth-child(even) {
+  background: #0f172a; /* slate-900 */
+}
+
+/* Improved scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b; /* slate-800 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(20, 184, 166, 0.5); /* teal-500 */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(20, 184, 166, 0.7);
+}
+
+/* Improve text selection */
+::selection {
+  background: rgba(20, 184, 166, 0.3);
+  color: #e2e8f0;
+}
