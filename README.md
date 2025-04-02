@@ -1,6 +1,6 @@
 # Rishabh Gupta - Portfolio
 
-![Portfolio Preview](./src/assets/portfolio-preview.png)
+![Portfolio Preview](./public/Preview.png)
 
 
 ## ✨ Features
