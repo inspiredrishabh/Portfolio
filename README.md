@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 # Rishabh Gupta - Portfolio
 
 ![Portfolio Preview](./src/assets/portfolio-preview.png)
 
-## 🚀 Live Demo
-
-[View Live Demo](https://rishabhgupta-portfolio.vercel.app)
 
 ## ✨ Features
 
@@ -44,7 +40,7 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/inspiredrishabh/Portfolio/
    cd portfolio
    ```
 
@@ -89,14 +85,3 @@ Update the `projectsData` array in `src/components/Projects.jsx` with new projec
   url: "https://github.com/username/repo-name"
 }
 ```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📞 Contact
-
-For any questions or feedback, please contact me at inspiredrishabh@gmail.com
-=======
-
->>>>>>> 01467c7c303107120728e1acf70cba2ed07fc3f6
