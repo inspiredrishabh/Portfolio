@@ -1,12 +1,98 @@
-# React + Vite
+# Rishabh Gupta - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](./src/assets/portfolio-preview.png)
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[View Live Demo](https://rishabhgupta-portfolio.vercel.app)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Modern UI/UX**: Sleek, responsive design with Tailwind CSS
+- **Animated Components**: Subtle animations enhance user experience
+- **Mobile-Optimized**: Fully responsive across all device sizes
+- **Performance Optimized**: Fast load times, optimized assets
+
+## 🛠️ Technologies Used
+
+- **React** - Frontend library
+- **Vite** - Build tool
+- **Tailwind CSS** - Styling
+- **GSAP** - Animations
+- **ESLint** - Code linting
+
+## 📋 Sections
+
+- About Me
+- Skills & Expertise
+- Projects Showcase
+- Professional Experience
+- Achievements
+- Volunteering Work
+- Contact Information
+
+## 🔧 Installation & Setup
+
+### Prerequisites
+
+- Node.js (v16.0.0 or newer)
+- npm or yarn
+
+### Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   cd portfolio
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
+
+3. Start development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Build for production:
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+
+## 📱 Mobile Optimization
+
+- Touch-friendly navigation
+- Optimized layout for small screens
+- Gesture support for mobile interaction
+
+## 💼 Adding New Projects
+
+Update the `projectsData` array in `src/components/Projects.jsx` with new project information:
+
+```javascript
+{
+  title: "Project Name",
+  description: "Project description goes here...",
+  technologies: ["Tech1", "Tech2", "Tech3"],
+  url: "https://github.com/username/repo-name"
+}
+```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 📞 Contact
+
+For any questions or feedback, please contact me at inspiredrishabh@gmail.com

@@ -7,8 +7,12 @@ function Header() {
   useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = "hidden";
+      // Add blur class to main content
+      document.querySelector("main")?.classList.add("blur-effect");
     } else {
       document.body.style.overflow = "auto";
+      // Remove blur class from main content
+      document.querySelector("main")?.classList.remove("blur-effect");
     }
 
     const handleClickOutside = (e) => {
@@ -21,6 +25,8 @@ function Header() {
     return () => {
       document.body.style.overflow = "auto";
       document.removeEventListener("click", handleClickOutside);
+      // Ensure blur is removed when component unmounts
+      document.querySelector("main")?.classList.remove("blur-effect");
     };
   }, [menuOpen]);
 
@@ -127,7 +133,7 @@ function Header() {
       {menuOpen && (
         <div
           id="mobile-menu-backdrop"
-          className="fixed inset-0 bg-gray-900/95 backdrop-blur-sm z-40 lg:hidden flex flex-col"
+          className="fixed inset-0 bg-gray-900/95 backdrop-blur-md z-40 lg:hidden flex flex-col"
         >
           <div className="container mx-auto px-4 py-8">
             {/* Menu Header */}
@@ -140,7 +146,7 @@ function Header() {
               </div>
               <button
                 onClick={() => setMenuOpen(false)}
-                className="p-2 rounded-full bg-gray-800 text-teal-400 hover:bg-gray-700 transition-colors"
+                className="p-2 rounded-full bg-gray-500 text-teal-400 hover:bg-gray-600 transition-colors"
                 aria-label="Close menu"
               >
                 <svg
@@ -166,7 +172,7 @@ function Header() {
                   key={item.section}
                   href={`#${item.section}`}
                   onClick={() => setMenuOpen(false)}
-                  className="text-xl py-4 px-4 border-b border-gray-800 text-gray-200 hover:text-teal-400 flex items-center transition-colors"
+                  className="text-xl py-4 px-4 bg-gray-800 rounded-lg text-gray-200 hover:text-teal-400 flex items-center transition-colors"
                 >
                   <span className="bg-gray-800/60 w-10 h-10 rounded-full flex items-center justify-center mr-4 text-teal-400">
                     {item.name.charAt(0)}
@@ -178,7 +184,7 @@ function Header() {
               <a
                 href="#contact"
                 onClick={() => setMenuOpen(false)}
-                className="text-xl py-4 px-4 border-b border-gray-800 text-gray-200 hover:text-teal-400 flex items-center transition-colors"
+                className="text-xl py-4 px-4 bg-gray-800 rounded-lg text-gray-200 hover:text-teal-400 flex items-center transition-colors"
               >
                 <span className="bg-gray-800/60 w-10 h-10 rounded-full flex items-center justify-center mr-4 text-teal-400">
                   C
@@ -191,7 +197,7 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
-                className="mt-4 text-center py-4 bg-teal-600 text-white rounded-lg hover:bg-teal-700 flex items-center justify-center transition-colors"
+                className=" text-center py-4 bg-gray-800 text-white rounded-lg hover:bg-teal-700 flex items-center justify-center transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
