@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rishabh Gupta - Portfolio
 
 ![Portfolio Preview](./src/assets/portfolio-preview.png)
@@ -96,3 +97,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📞 Contact
 
 For any questions or feedback, please contact me at inspiredrishabh@gmail.com
+=======
+
+>>>>>>> 01467c7c303107120728e1acf70cba2ed07fc3f6
