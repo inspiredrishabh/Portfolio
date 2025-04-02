@@ -2,7 +2,12 @@ function Skills() {
   const skillsData = [
     {
       category: "Programming Languages",
-      skills: ["JavaScript", "Java", "C", "SQL", "HTML & CSS"],
+      skills: [
+        "JavaScript",
+        "Java",
+        "C",
+        "SQL"
+      ],
     },
     {
       category: "Frameworks & Libraries",
