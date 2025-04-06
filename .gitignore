@@ -12,11 +12,6 @@ dist
 dist-ssr
 *.local
 
-# Make sure these directories are not ignored
-!public/images
-!public/assets
-!public/profile
-!src/assets
 
 # Editor directories and files
 .vscode/*
