@@ -55,7 +55,7 @@ function Footer() {
                 </div>
                 <a
                   href="mailto:inspiredrishabh@gmail.com"
-                  className="text-lg hover:text-teal-300  transition-colors"
+                  className="text-lg hover:text-teal-300  transition-colors flex overflow-hidden"
                 >
                   inspiredrishabh@gmail.com
                 </a>
