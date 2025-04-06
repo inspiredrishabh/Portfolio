@@ -82,7 +82,7 @@ function About() {
               <div className="absolute w-full h-full bg-teal-500/5 rounded-xl -left-3 -top-3 -z-10"></div>
               <div className="h-full w-full p-2 bg-slate-800 rounded-xl shadow-xl">
                 <img
-                  src="/public/profile.png"
+                  src="/profile.png"
                   alt="Rishabh Gupta"
                   className="w-full h-full rounded-lg object-cover"
                 />
